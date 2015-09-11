@@ -1,0 +1,13 @@
+<% if !session[:user_id] %>
+  <a href="/login">Login</a>
+<% else %>
+  <a href="/users/<%= session[:user_id] %>">Profile</a>
+  <a href="/logout">Logout</a>
+<% end %>
+
+<h1>This is the homepage</h1>
+
+
+<% if !session[:user_id] %>
+  <a href="/users/new">Register Here</a>
+<% end %>
