@@ -3,16 +3,17 @@ get '/decks' do
   erb :"decks/index"
 end
 
+# Game logic
 get '/decks/:id' do
 
 
 
   @deck = Deck.find(params[:id])
-  # @shuffled_cards = @deck.cards.shuffle
+  @shuffled_cards = @deck.cards.shuffle
 
-  @game = Game.new
+  # @game = Game.new
 
-  @game.play(@deck)
+  # @game.play(@deck)
 
 
   erb :"decks/show"
