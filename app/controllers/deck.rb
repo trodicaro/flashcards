@@ -7,7 +7,7 @@ end
 get '/decks/:id' do
 
   # Must change user Id
-  @game = Game.create(user_id: 1, deck_id: params[:id])
+  @game = Game.create(user_id: session[:user_id], deck_id: params[:id])
 
   redirect :"/games/#{@game.id}"
 

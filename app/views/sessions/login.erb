@@ -12,4 +12,8 @@
   <input type="submit" value="Login">
   <br>
   <a href="/users/new">Register Here</a>
+
+  <% if @error %>
+    <h4>No User Found</h4>
+  <% end %>
 </form>

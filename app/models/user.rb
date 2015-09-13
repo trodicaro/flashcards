@@ -6,8 +6,6 @@ class User < ActiveRecord::Base
   has_many :guesses
   has_many :decks, through: :games
 
-
-
   def password
     @password ||= BCrypt::Password.new(hashed_password)
   end
@@ -20,5 +18,4 @@ class User < ActiveRecord::Base
   def authenticate(password)
     self.password == password
   end
-
 end
