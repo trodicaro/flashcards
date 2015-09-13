@@ -1,21 +1,21 @@
 <link rel="stylesheet" href="css/index.css" type="text/css">
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
- <div id="navbar">
-<% if !session[:user_id] %>
-  <a href="/login">Login</a>
-<% else %>
-  <a href="/users/<%= session[:user_id] %>">Profile</a>
-  <a href="/logout">Logout</a>
-<% end %>
+<div id="navbar">
+  <% if !session[:user_id] %>
+    <a href="/login">Login</a>
+  <% else %>
+    <a href="/users/<%= session[:user_id] %>">Profile</a>
+    <a href="/logout">Logout</a>
+  <% end %>
 </div>
 
 <h1>Flash</h1>
 
 <div id="navbar2">
-<% if !session[:user_id] %>
-  <a href="/users/new">Register Here</a>
-<% end %>
+  <% if !session[:user_id] %>
+    <a href="/users/new">Register Here</a>
+  <% end %>
 </div>
 
-
+<a href="decks">Link to Decks</a>

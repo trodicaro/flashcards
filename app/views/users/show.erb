@@ -23,30 +23,40 @@
 </form>
 
 <% if @games %>
-  <% @games.each do |game| %>
-    <%= deck_name(game.deck_id) %>
-    <table>
-      <tr>
-        <th>Date</th>
-        <th>Cards in Deck</th>
-        <th>First Guess Correct</th>
-        <th>Total Guesses</th>
-      </tr>
-      <tr>
-        <td>
-          <%= game.created_at.to_date %>
-        </td>
-        <td>
-          <%= count_cards_in_deck(game.deck_id) %>
-        </td>
-        <td>
-          <%= count_all_first_guesses(game.deck_id) %>
-        </td>
-        <td>
-          <%= count_all_guesses(game.deck_id) %>
-        </td>
-      </tr>
-    </table>
+  <% @decks.each do |deck|%>
+    <% @games.each do |game_exists|
+      if game_exists.deck_id == deck.id %>
+        <%= deck.name %>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Cards in Deck</th>
+              <th>First Guess Correct</th>
+              <th>Total Guesses</th>
+            </tr>
+        <% @games.each do |game| %>
+          <% if deck.id == game.deck_id %>
+            <tr>
+              <td>
+                <%= game.created_at.to_date %>
+              </td>
+              <td>
+                <%= count_cards_in_deck(game.deck_id) %>
+              </td>
+              <td>
+                <%= count_all_first_guesses(game) %>
+              </td>
+              <td>
+                <%= count_all_guesses(game) %>
+              </td>
+            </tr>
+          <% else %>
+          <% end %>
+        <% end %>
+          </table>
+      <% else %>
+      <% end %>
+    <% end %>
   <% end %>
 <% else %>
   <p>Go Play a Game</p>

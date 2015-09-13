@@ -10,6 +10,7 @@ post '/login' do
     session[:user_id] = user.id
     erb :"/index"
   else
+    @error = ""
     erb :"/sessions/login"
   end
 end

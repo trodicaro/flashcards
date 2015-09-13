@@ -1,6 +1,3 @@
-
-require 'bCrypt'
-
 class User < ActiveRecord::Base
   has_many :games
   has_many :guesses
@@ -9,8 +6,6 @@ class User < ActiveRecord::Base
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
   validates :password, presence: true
-
-
 
   def password
     @password ||= BCrypt::Password.new(hashed_password)
@@ -24,5 +19,4 @@ class User < ActiveRecord::Base
   def authenticate(password)
     self.password == password
   end
-
 end
