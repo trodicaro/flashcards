@@ -1,6 +1,15 @@
+<link rel="stylesheet" href="../css/deck_index.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+<div id='home'>
+<a href="/">Back to Home</a>
+</div>
+
+
+
 <% @decks.each do |deck| %>
   <p> <a href="/decks/<%=deck.id%>"> <%=deck.name %> </a></p>
 <% end %>
 
-<a href="/">Back to Home</a>
 

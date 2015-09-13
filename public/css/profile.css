@@ -1,20 +1,65 @@
+body{
+  background-image: url(http://i.imgur.com/G5pfP.jpg);
+  background-size: cover;
+}
 a {
-  display: block;
-  text-align: center;
+  color: #22B7F6;
+  text-decoration: none;
 }
+
+#edit{
+  text-align: center;
+  font-family: 'Quicksand', cursive;
+  font-weight: bold;
+  background-color: white;
+  width: 8%;
+  border-radius: 20px;
+  margin-left: 46%;
+  margin-right: 46%;
+}
+
 #navbar{
-  display: block;
-  text-align: right;
-}
-h3,h1 {
   text-align: center;
+  font-family: 'Quicksand', cursive;
+  font-weight: bold;
+  background-color: white;
+  width: 6%;
+  border-radius: 20px;
+  margin-left: 93%;
+  margin-top: 10px;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-style: italic;
+  opacity: 0.75;
+  letter-spacing: 6px;
+  font-size: 75px;
+  color: #ff1bb6;
+}
+
+h3 {
+  font-family: 'Lobster', cursive;
+  font-style: italic;
+  margin-left: 200px;
+  opacity: 0.8;
+  letter-spacing: 6px;
+  font-size: 30px;
+  color: #ff1bb6;
 }
 table {
+  background-color: white;
   border: 1px solid black;
   text-align: center;
-  margin: auto;
+  opacity: 0.8;
+  margin-left: 150px;
 }
 th {
+  background-color: gray;
+  font-family: 'Quicksand', cursive;
+  font-style: italic;
+  font-weight: bold;
   padding: 1em 2em;
 }
 tr {

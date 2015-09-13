@@ -1,0 +1,31 @@
+body{
+  background-image: url(http://radscreens.com/files/LFexXgBYmkOA.jpg);
+  background-size: cover;
+}
+
+
+
+a {
+  color: #22B7F6;
+  text-decoration: none;
+  font-family: 'Quicksand', cursive;
+  margin: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: white;
+  width: 30px;
+  border: 30px;
+  border-radius: 15px;
+  margin-top: 5px
+}
+
+#home {
+  text-align: center;
+  font-family: 'Quicksand', cursive;
+  font-weight: bold;
+  background-color: white;
+  width: 400px;
+  border-radius: 20px;
+  margin-left: 75%;
+  margin-top: 5px;
+}

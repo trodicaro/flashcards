@@ -1,31 +1,61 @@
 body{
   background-image: url(http://i.imgur.com/mvnii0H.jpg);
+  background-size: cover;
 }
 
 a {
-  color: #828282;
-text-decoration: none;
+  color: #22B7F6;
+  text-decoration: none;
+  font-family: 'Quicksand', cursive;
 }
 
-a:hover{
-  color: white;
-}
+
 
 h1 {
   text-align: center;
   font-family: 'Lobster', cursive;
-  font-size: 60px;
-  ...color: #cc4dc6;
+  font-style: italic;
+  opacity: 0.75;
+  letter-spacing: 6px;
+  font-size: 75px;
+  color: #ff1bb6;
+}
+
+#deck{
+  background-color: white;
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
 }
 
 #navbar{
-  text-align: right;
+  text-align: center;
   margin: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: white;
+  width: 6%;
+  border-radius: 20px;
+  margin-left: 93%;
+  margin-top: 10px;
 }
 
 #navbar2{
-  font-size: 40px;
+  background-color: white;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-radius: 20px;
   text-align: center;
-  margin: 20px;
+  font-weight: bold;
+  font-size: 45px;
 
 }
