@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  ....#color: #cc4dc6;
+}
+
+form {
+  margin: auto;
+  position: relative;
+  width: 550px;
+  height: 450px;
+  font-style: italic;
+  font-family: 'Quicksand', cursive;
+}
+
+input[type=submit] {
+  color: green;
+}

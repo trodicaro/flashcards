@@ -38,5 +38,3 @@ card10 = Card.create(question: "Cat", answer: "Butler", deck_id: deck3.id)
 # Guess.create(game_id: 1, card_id: card9.id, solved: false)
 # Guess.create(game_id: 1, card_id: card10.id, solved: false)
 Game.create(user_id: 1, deck_id: deck3.id)
-
-

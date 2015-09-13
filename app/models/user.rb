@@ -1,10 +1,11 @@
-
-require 'bCrypt'
-
 class User < ActiveRecord::Base
   has_many :games
   has_many :guesses
   has_many :decks, through: :games
+
+  validates :name, presence: true
+  validates :email, presence: true, uniqueness: true
+  validates :password, presence: true
 
   def password
     @password ||= BCrypt::Password.new(hashed_password)
