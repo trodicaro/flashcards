@@ -23,6 +23,7 @@ get '/games/:id' do
 end
 
 # maybe not restful, but ok for now
+# post "games/:game_id/cards/:card_id/guesses" for a REST-ful route
 post '/games/:id' do
 
   @game = Game.find(params[:id])
