@@ -15,8 +15,7 @@ get '/users/:id' do
   else
     @user = User.find_by(id: params[:id])
     logger.info params[:id].to_i.class
-    @games = Game.where(user_id: params[:id])
-    # @decks = Deck.where(id: )
+    @games = Game.where(user_id: params[:id]).order(:created_at)
 
     erb :'users/show'
   end
