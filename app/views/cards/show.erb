@@ -1,8 +1,16 @@
-<h2>This is the card</h2>
+<link rel="stylesheet" href="../../css/card.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+<h2>Your current card is</h2>
+<div id='question'>
 <%= @current_card.question %>
+<div id='red'></div>
+</div>
 
 <form method="post" action="/games/<%=@game.id%>">
   <input type="text" name="user_guess" placeholder="Enter guess here">
   <input type="hidden" name="card_id" value=<%= @current_card.id %>>
+  <br>
   <input type="submit" value="Am I right?">
 </form>

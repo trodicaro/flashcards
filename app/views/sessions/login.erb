@@ -1,6 +1,18 @@
+<link rel="stylesheet" href="../css/login.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+<div id='home'>
+<a href="/users/new">Register Here</a>
+</div>
+<div id='home'>
+<a href="/">Return Home</a>
+</div>
+
 <h1>Login Here</h1>
 
 <form action="/login" method="post">
+  <div id='forms'>
   <label for="email">Email: </label>
   <input type="text" name="email">
   <br>
@@ -10,12 +22,11 @@
   <br>
 
   <input type="submit" value="Login">
-  <br>
-  <a href="/users/new">Register Here</a>
+  </div>
 
   <% if @error %>
     <h4>No User Found</h4>
   <% end %>
 </form>
 
-<a href="/">Return Home</a>
+

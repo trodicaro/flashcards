@@ -1,13 +1,22 @@
 <link rel="stylesheet" href="../css/profile.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
 <div id="navbar">
   <% if session[:user_id] %>
     <a href="/logout">Logout</a>
   <% end %>
 </div>
 
+<div id="navbar">
+<a href="/">Go Home</a>
+</div>
+
 <h1>Your Profile Page</h1>
 
+<div  id='edit'>
 <a href="/users/<%= @user.id %>/edit">Edit Your Info</a>
+</div>
 <br>
 
 <% if @games %>
@@ -44,7 +53,5 @@
 <% else %>
   <p>Go Play a Game</p>
 <% end %>
-<br>
-<a href="/">Go Home</a>
 
 

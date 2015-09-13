@@ -1,6 +1,11 @@
+<link rel="stylesheet" href="../../css/edit.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
 <h1>Edit Your Profile Page</h1>
 
 <form action="/users/<%= @user.id %>" method="post">
+  <div id='forms'>
   <input type="hidden" name="_method" value="put"/>
   <label for="name">Name: </label>
   <input type="text" name="user[name]" value="<%= @user.name %>">
@@ -16,4 +21,5 @@
 
   <input type="submit" value="Edit Information">
   <br>
+  </div>
 </form>
