@@ -6,6 +6,10 @@ class User < ActiveRecord::Base
   has_many :guesses
   has_many :decks, through: :games
 
+  validates :name, presence: true
+  validates :email, presence: true, uniqueness: true
+  validates :password, presence: true
+
 
 
   def password

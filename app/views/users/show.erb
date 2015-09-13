@@ -32,7 +32,6 @@
         <th>First Guess Correct</th>
         <th>Total Guesses</th>
       </tr>
-
       <tr>
         <td>
           <%= game.created_at.to_date %>
@@ -47,10 +46,8 @@
           <%= count_all_guesses(game.deck_id) %>
         </td>
       </tr>
-
     </table>
   <% end %>
-
 <% else %>
   <p>Go Play a Game</p>
 <% end %>
