@@ -1,6 +1,10 @@
 class Game < ActiveRecord::Base
   belongs_to :user
   belongs_to :deck
+  has_many :guesses
+  # has_one :deck
+  # has_many :cards, through: :deck
+
 
   def shuffle_cards
     self.deck.cards.shuffle
