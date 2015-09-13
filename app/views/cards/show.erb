@@ -1,0 +1,8 @@
+<h2>This is the card</h2>
+<%= @current_card.question %>
+
+<form method="post" action="/games/<%=@game.id%>">
+  <input type="text" name="user_guess" placeholder="Enter guess here">
+  <input type="hidden" name="card_id" value=<%= @current_card.id %>>
+  <input type="submit" value="Am I right?">
+</form>

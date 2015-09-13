@@ -17,19 +17,26 @@ card8 = Card.create(question: "What't the closest L station", answer: "Merchandi
 # Guess.create(user_id: 1, card_id: card1.id, solved: false)
 
 #cards in "Survival guide at DBC" deck
-Guess.create(user_id: 1, card_id: card7.id, solved: false)
-Guess.create(user_id: 1, card_id: card7.id, solved: true)
-Guess.create(user_id: 1, card_id: card8.id, solved: false)
-Guess.create(user_id: 1, card_id: card8.id, solved: true)
+# Guess.create(game_id: 1, card_id: card7.id, solved: false)
+# Guess.create(game_id: 1, card_id: card7.id, solved: true)
+# Guess.create(game_id: 1, card_id: card8.id, solved: false)
+# Guess.create(game_id: 1, card_id: card8.id, solved: true)
 
 Game.create(user_id: 1, deck_id: deck2.id)
+
+# Another one - test if the guesses bleed out
+Game.create(user_id: 1, deck_id: deck2.id)
+# Guess.create(game_id: 1, card_id: card7.id, solved: false)
+# Guess.create(game_id: 1, card_id: card8.id, solved: false)
+
+
 
 # the one that should fail
 deck3 = Deck.create(name: "Pets")
 card9 = Card.create(question: "Dog", answer: "Kasey", deck_id: deck3.id)
 card10 = Card.create(question: "Cat", answer: "Butler", deck_id: deck3.id)
-Guess.create(user_id: 1, card_id: card9.id, solved: false)
-Guess.create(user_id: 1, card_id: card10.id, solved: false)
+# Guess.create(game_id: 1, card_id: card9.id, solved: false)
+# Guess.create(game_id: 1, card_id: card10.id, solved: false)
 Game.create(user_id: 1, deck_id: deck3.id)
 
 

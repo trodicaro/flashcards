@@ -1,6 +1,9 @@
 <h4>Here are your definitions for <%=@deck.name%></h4>
 <ul>
+
+
 <% @shuffled_cards.each do |card| %>
   <li><%= card.question %></li>
 <% end %>
+
 </ul>
